@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect
+from flask import Flask, request, render_template, redirect, url_for
 import smtplib
 import os
 from dotenv import load_dotenv
@@ -26,7 +26,7 @@ def send_email():
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
             smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
             smtp.sendmail(EMAIL_ADDRESS, EMAIL_ADDRESS, email_message)
-        return "Message sent successfully!"
+        return redirect(url_for("contact_iframe", success="true"))
     except Exception as e:
         return f"Error: {e}"
       
