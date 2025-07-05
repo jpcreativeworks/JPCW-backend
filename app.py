@@ -41,7 +41,7 @@ def send_email():
           or visit our site again at 
           <a href="https://jpcreativeworks.netlify.app" target="_blank">jpcreativeworks.netlify.app</a>.
         </p>
-        <p>Thanks again for reaching out — I’m excited to connect and collaborate with you.
+        <p>Thanks again for reaching out! I’m excited to connect and collaborate with you.</br>
         – Jenn Bencriscutto<br>
         JP Creative Works</p>
       </body>
