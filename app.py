@@ -12,7 +12,7 @@ EMAIL_PASSWORD = os.environ.get("EMAIL_PASS")
 
 @app.route("/")
 def about_page():
-    return render_template("about.html")
+    return render_template("about.html", thank_you=False)
 
 @app.route("/send", methods=["POST"])
 def send_email():
